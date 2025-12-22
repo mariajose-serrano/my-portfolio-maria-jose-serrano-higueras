@@ -4,43 +4,46 @@ const title = Astro.props.title;
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-		<title>{title}</title>
-	</head>
-	<body class="page">
-  <div class="overlay">
-    <slot />
-  </div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body class="page">
+    <div class="overlay">
+      <slot />
+    </div>
+  </body>
 </html>
 
 <style is:global>
-	html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lora', sans-serif;
-  color: #fff;
-  min-height: 100%;
-}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", sans-serif;
+    color: #fff;
+    min-height: 100%;
+  }
 
-body.page {
-  background-image: url('/images/blackmarble2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+  body.page {
+    background-image: url("/my-portfolio-maria-jose-serrano-higueras/images/blackmarble2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
-.overlay {
-  min-height: 100vh;
-  background: rgba(0, 0, 0, 0.70); /* ajusta 0.60–0.80 según te guste */
-}
+  .overlay {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* ajusta 0.60–0.80 según te guste */
+  }
 </style>
