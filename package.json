@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "rm -rf docs ; astro build ; mv dist cdocs ; git add -A ; git commit -m 'New production version' ; git push"
+    "deploy": "rm -rf docs ; astro build ; mv dist docs ; git add -A ; git commit -m 'New production version' ; git push"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.4",
