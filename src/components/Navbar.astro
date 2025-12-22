@@ -1,22 +1,24 @@
 ---
-import Linkedin from "@assets/icons/linkedin.astro"
-import Github from "@assets/icons/github.astro"
-import Email from "@assets/icons/email.astro"
-import ContainerHover from "@components/ContainerHover.astro"
+import Linkedin from "@assets/icons/linkedin.astro";
+import Github from "@assets/icons/github.astro";
+import Email from "@assets/icons/email.astro";
+import ContainerHover from "@components/ContainerHover.astro";
 ---
 
 <nav class="w-full flex justify-end items-center">
-  <div class="flex gap-3 items-center">
-    <ContainerHover link="https://www.linkedin.com/in/maria-jose-serrano-9aa23810b">
-      <Linkedin />
-    </ContainerHover>
-  <span class="text-xl"></span>
-  <div class="flex gap-3 items-center">
-    <ContainerHover link="mariajose-serrano@hotmail.com">
-      <Email />
-    </ContainerHover>
+  <div class="flex items-center gap-4">
     <ContainerHover link="https://github.com/mariajose-serrano">
       <Github />
+    </ContainerHover>
+
+    <ContainerHover
+      link="https://www.linkedin.com/in/maria-jose-serrano-9aa23810b"
+    >
+      <Linkedin />
+    </ContainerHover>
+
+    <ContainerHover link="mailto:mariajose-serrano@hotmail.com">
+      <Email />
     </ContainerHover>
   </div>
 </nav>
