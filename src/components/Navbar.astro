@@ -1,16 +1,21 @@
 ---
+import Linkedin from "@assets/icons/linkedin.astro"
 import Github from "@assets/icons/github.astro"
 import Email from "@assets/icons/email.astro"
 import ContainerHover from "@components/ContainerHover.astro"
 ---
 
-<nav class="w-full flex justify-between items-center">
-  <span class="text-xl">@username</span>
+<nav class="w-full flex justify-end items-center">
   <div class="flex gap-3 items-center">
-    <ContainerHover link="mailto:ejemplo@gmail.com">
+    <ContainerHover link="https://www.linkedin.com/in/maria-jose-serrano-9aa23810b">
+      <Linkedin />
+    </ContainerHover>
+  <span class="text-xl"></span>
+  <div class="flex gap-3 items-center">
+    <ContainerHover link="mariajose-serrano@hotmail.com">
       <Email />
     </ContainerHover>
-    <ContainerHover link="https://github.com/ejemplo">
+    <ContainerHover link="https://github.com/mariajose-serrano">
       <Github />
     </ContainerHover>
   </div>

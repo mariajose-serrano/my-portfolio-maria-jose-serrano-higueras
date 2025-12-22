@@ -1,25 +1,44 @@
 ---
-import ProjectCard from '@components/ProjectCard.astro'
-import Typescript from '@assets/icons/typescript.astro';
-import React from '@assets/icons/react.astro';
-import Supabase from '@assets/icons/supabase.astro';
-import Tailwind from '@assets/icons/tailwind.astro';
+import ProjectCard from "@components/ProjectCard.astro";
+import Typescript from "@assets/icons/typescript.astro";
+import React from "@assets/icons/react.astro";
+import Supabase from "@assets/icons/supabase.astro";
+import Tailwind from "@assets/icons/tailwind.astro";
 ---
 
 <section class="my-20">
-  <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
-  <hr class="mb-6 border-zinc-600">
+  <h2 class="text-2xl font-semibold mb-2">Projects</h2>
+  <hr class="mb-6 border-zinc-600" />
 
-  <ProjectCard projectTitle="Neovim" projectDescription="Vim-fork focused on extensibility and usability" projectLink="https://neovim.io" image="/images/neovim.webp">
-    <React />
-    <Supabase />
+  <ProjectCard
+    projectTitle="Web Development Fundamentals"
+    projectDescription="Final evaluation project of Module 1, focused on HTML, CSS, and JavaScript fundamentals, layout, and responsive design."
+    projectLink="https://github.com/mariajose-serrano/modulo-1-evaluacion-final-bis1-mariajose-serrano"
+    image="/images/logoweb.png"
+  >
     <Tailwind />
     <Typescript />
   </ProjectCard>
 
-  <ProjectCard projectTitle="React" projectDescription="The library for web and native user interfaces." projectLink="https://react.dev/" image="/images/react.webp">
+  <ProjectCard
+    projectTitle="Twitter Lab"
+    projectDescription="Frontend project replicating core Twitter functionalities, developed during Module 2. Focused on components, layout, and user interaction."
+    projectLink="https://github.com/mariajose-serrano/modulo-2-evaluacion-final-bis-mariajose-serrano-TwitterLab"
+    image="/images/twitterlablogo.png"
+  >
     <React />
-    <Supabase />
+    <Tailwind />
+    <Typescript />
+  </ProjectCard>
+
+  <ProjectCard
+    projectTitle="Harry Potter Web App"
+    projectDescription="Interactive web application developed as the final project of Module 3. Focused on React, state management, and dynamic content."
+    projectLink="https://github.com/mariajose-serrano/modulo-3-evaluacion-final-mariajose-serrano-Harry-Potter"
+    image="/images/harrypotterlogo.png"
+  >
+    <React />
+    <Typescript />
     <Tailwind />
   </ProjectCard>
 </section>

@@ -1,15 +1,19 @@
 ---
-import Layout from '@layouts/Layout.astro';
-import Navbar from '@components/Navbar.astro';
-import ProfileSection from '@components/ProfileSection.astro';
-import AboutSection from '@components/AboutSection.astro';
-import ProjectsSection from '@components/ProjectsSection.astro';
-import SkillsSection from '@components/SkillsSection.astro';
-import FinalSection from '@components/FinalSection.astro';
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@components/Navbar.astro";
+import ProfileSection from "@components/ProfileSection.astro";
+import AboutSection from "@components/AboutSection.astro";
+import ProjectsSection from "@components/ProjectsSection.astro";
+import SkillsSection from "@components/SkillsSection.astro";
+import CertificationsSection from "@components/CertificationsSection.astro";
+import LanguagesSection from "@components/LanguagesSection.astro";
+import FinalSection from "@components/FinalSection.astro";
 ---
 
 <Layout title="Portfolio">
-  <div class="min-w-[535px] max-w-screen-sm mx-auto py-16 px-8 selection:bg-gray-600 selection:text-white">
+  <div
+    class="min-w-[535px] max-w-screen-sm mx-auto py-16 px-8 selection:bg-gray-600 selection:text-white"
+  >
     <header>
       <Navbar />
       <ProfileSection />
@@ -17,7 +21,9 @@ import FinalSection from '@components/FinalSection.astro';
     <main>
       <AboutSection />
       <ProjectsSection />
+      <CertificationsSection />
       <SkillsSection />
+      <LanguagesSection />
     </main>
     <footer>
       <FinalSection />
